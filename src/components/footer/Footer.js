@@ -4,9 +4,9 @@ import './Footer.css';
 const Footer = () => {
     return (
         <footer className='footer'>
-            <div>
+            <div className= 'footer-info'>
                 <h1>Camilo Andrés Cerquera</h1>
-                <p></p>
+                <p>Bogota-Colombia</p>
             </div>
             <div className="footer-contact">
                 <h3>Contactame</h3>
@@ -17,19 +17,20 @@ const Footer = () => {
                     Diseñado por Camilo Andres Cerquera
                 </div>
                 <div className='sns-links'>
-                    <a href="https://linkedin.com" target="_blank">
+                    <a href="https://www.linkedin.com/in/camilo-cerquera/" target="_blank" rel="noreferrer">
                         <i className="fab fa-linkedin linkedin"></i>
                     </a>
-                </div>
-                    <a href="https://twitter.com" target="_blank">
-                        <i className="fab fa-twitter twitter"></i>
-                    </a>
-                    <a href="https://facebook.com" target="_blank">
-                        <i className="fab fa-facebook facebook"></i>
-                    </a>
-                    <a href="https://github.com" target="_blank">
+                    <a href="https://github.com/Keltuzad29" target="_blank" rel="noreferrer">
                         <i className="fab fa-github github"></i>
                     </a>
+                
+                    <a href="https://twitter.com/CamiloACerquera?s=09" target="_blank" rel="noreferrer">
+                        <i className="fab fa-twitter twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/C.Cerquera" target="_blank" rel="noreferrer">
+                        <i className="fab fa-facebook facebook"></i>
+                    </a>
+                    </div>
             </div>
         </footer>
     )
