@@ -1,5 +1,7 @@
 import React from 'react'
 import './Navbar.css'
+import logo from '../../media/logoCC.png'
+
 const Navbar = ({isScrolling}) => { 
 
     const toTheTop = ()=>{
@@ -8,8 +10,9 @@ const Navbar = ({isScrolling}) => {
 
     return (
         <nav className={`navbar ${isScrolling > 20 ? "scrolling" : null}`}>
+        
         <div className='navbar-logo' onClick={toTheTop}>
-            Camilo Andrés Cerquera
+        <img className='image' src={logo} alt="logo"></img>
         </div>
         </nav>
     )

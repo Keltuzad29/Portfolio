@@ -15,8 +15,17 @@ transition: all 0.5s ease;
 }
 
 .navbar-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 80px;
     line-height: 80px;
     color: white;
     cursor: pointer;
+}
+
+.image{
+    margin-left: 10px;
+    width: 65px;
+    height: 65px;
 }

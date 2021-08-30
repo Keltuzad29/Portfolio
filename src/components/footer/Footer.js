@@ -30,6 +30,13 @@ const Footer = () => {
                     <a href="https://www.facebook.com/C.Cerquera" target="_blank" rel="noreferrer">
                         <i className="fab fa-facebook facebook"></i>
                     </a>
+
+                    <a href="https://wa.link/7qt2y1" target="_blank" rel="noreferrer">
+                        <i className="fab fa-whatsapp whatsapp"></i>
+                    </a> 
+                    <a  href="mailto:c.cerquera.123@gmail.com" target="_blank" rel="noreferrer">
+                        <i className="fas fa-envelope envelope"></i>
+                    </a>                  
                     </div>
             </div>
         </footer>
