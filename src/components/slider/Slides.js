@@ -27,7 +27,7 @@ const slidesInfo = [
     video:
       "https://player.vimeo.com/video/595042162?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=781e5b8e2c",
     linkYoutube:
-      "https://www.youtube.com/watch?v=9BiEg0NEjao&t=31s&ab_channel=camilocerquera",
+      "https://keltuzad29.github.io/Proyect_Movies/",
     alt: "Proyecto 3",
     desc: "Proyecto AppMovies",
     title: "Video App Movies.mp4",
