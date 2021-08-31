@@ -1,32 +1,63 @@
-import React from 'react';
-import "./Slider.css"
+import React from "react";
+import "./Slider.css";
 
 const slidesInfo = [
-    {
-        src:"https://cdn.pixabay.com/photo/2016/12/19/08/39/mobile-phone-1917737_960_720.jpg",
-        alt:"Proyecto 1",
-        desc:"Proyecto 1"
-    },
-    {
-        src:"https://cdn.pixabay.com/photo/2017/10/31/19/05/web-design-2906159_960_720.jpg",
-        alt:"Proyecto 2",
-        desc:"Proyecto 2"
-    },
-    {
-        src:"https://cdn.pixabay.com/photo/2015/02/05/08/06/macbook-624707_960_720.jpg",
-        alt:"Proyecto 3",
-        desc:"Proyecto 3"
-    },
-]
+  {
+    id: 1,
+    video:
+      "https://player.vimeo.com/video/595038033?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=d2a14b22b4",
+    linkYoutube:
+      "https://www.youtube.com/watch?v=QTYWlhuJW0E&t=128s&ab_channel=camilocerquera",
+    alt: "Proyecto 1",
+    desc: "Proyecto AppDogs",
+    title: "Proyecto Individual.mp4",
+  },
+  {
+    id: 2,
+    video:
+      "https://player.vimeo.com/video/595037183?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=1cadb2e850",
+    linkYoutube:
+      "https://www.youtube.com/watch?v=dOg-mfJzQiY&t=25s&ab_channel=camilocerquera",
+    alt: "Proyecto 2",
+    desc: "Proyecto AppWeather",
+    title: "Proyecto App Weather.mp4",
+  },
+  {
+    id: 3,
+    video:
+      "https://player.vimeo.com/video/595042162?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=781e5b8e2c",
+    linkYoutube:
+      "https://www.youtube.com/watch?v=9BiEg0NEjao&t=31s&ab_channel=camilocerquera",
+    alt: "Proyecto 3",
+    desc: "Proyecto AppMovies",
+    title: "Video App Movies.mp4",
+  },
+];
 
+const slides = slidesInfo.map((slide) => (
+  <div className="slide-container">
+    {/* <img src={slide.src} alt={slide.alt}/> */}
 
-const slides = slidesInfo.map(slide=> (
-    <div className="slide-container">
-        <img src={slide.src} alt={slide.alt}/>
-        <div className="slide-desc">
-            <span>{slide.desc}</span>
-        </div>
+    <iframe
+      padding="0px"
+      margin="0px"
+      width="800px"
+      height="400px"
+      key={slide.id}
+      src={slide.video}
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen
+      title={slide.title}
+      controls
+    ></iframe>
+
+    <div className="slide-desc">
+      <a href={slide.linkYoutube} target="_blank" rel="noreferrer">
+        <span>{slide.desc}</span>
+      </a>
     </div>
-))
+  </div>
+));
 
-export default slides
+export default slides;
