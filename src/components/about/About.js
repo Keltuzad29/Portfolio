@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import foto from "../../media/fondo.jpg";
+import cv from "../../media/cv.png";
 
 const About = () => {
   return (
@@ -8,18 +9,18 @@ const About = () => {
       <div className="about-desc">
         <h3>Algo Acerca de Mi</h3>
         <p>
-          Yo soy Camilo Cerquera me gusta mucho la Programacion💻y aprender
-          cada dia cosas nuevas,😎incursione en el desarrollo hace tiempo en
-          un curso de sistemas y aprendiendo lo basico de Visual Basic, como
-          todos haciendo mi primer Hola Mundo!👨‍💻, despues me aleje un poco de
-          esto y en la universidad estudiando Electronica y
-          Telecomunicaciones📡vi un par de materias sobre el tema, siempre me
-          emocione mucho cuando los programas funcionaban🤩pero nunca crei que
-          ser Desarrollador iba a ser mi oficio hasta que me enfrente al mercado
-          laboral y no encajaba en ningun lado,😰 luego conoci Henry me vi
-          retado y acepte el desafio, ya he aprendido bastantes cosas y continuo
-          capacitandome📖y especializandome cada dia mas en algo que en
-          realidad me motiva y mueve fibras dentro de mi.😁
+          Yo soy Camilo Cerquera me gusta mucho la Programacion💻y aprender cada
+          dia cosas nuevas,😎incursione en el desarrollo hace tiempo en un curso
+          de sistemas y aprendiendo lo basico de Visual Basic, como todos
+          haciendo mi primer Hola Mundo!👨‍💻, despues me aleje un poco de esto y
+          en la universidad estudiando Electronica y Telecomunicaciones📡vi un
+          par de materias sobre el tema, siempre me emocione mucho cuando los
+          programas funcionaban🤩pero nunca crei que ser Desarrollador iba a ser
+          mi oficio hasta que me enfrente al mercado laboral y no encajaba en
+          ningun lado,😰 luego conoci Henry me vi retado y acepte el desafio, ya
+          he aprendido bastantes cosas y continuo capacitandome📖y
+          especializandome cada dia mas en algo que en realidad me motiva y
+          mueve fibras dentro de mi.😁
         </p>
         <h3>Skills</h3>
         <div className="about-skills">
@@ -108,6 +109,13 @@ const About = () => {
       </div>
       <div className="about-img">
         <img src={foto} alt="about" />
+        <a
+          href="https://drive.google.com/file/d/12X3j2sSYxe12TLHMKaCHzEWgi6cfaVQM/view"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img className="about-img-cv" src={cv} alt="CV" />
+        </a>
       </div>
     </div>
   );
